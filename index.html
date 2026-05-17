@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nilsh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HERO -->
+    <section id="hero">
+      <div id="game-title">
+        <h1 id="title-text">NILSH</h1>
+        <span class="title-line" id="title-line"></span>
+        <p id="tagline-text">✦ La aventura comienza aquí ✦</p>
+      </div>
+      <div id="scroll-hint">
+        <span>Scroll</span>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- TRAILER -->
+    <section id="trailer-section">
+      <div id="video-wrapper">
+        <!-- REEMPLAZA ESTO con tu iframe de YouTube:
+      <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+        style="width:100%;aspect-ratio:16/9;display:block;border:none;"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      -->
+        <div id="video-placeholder" onclick="handlePlay()">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24" fill="var(--gold)">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+          <p class="placeholder-label">Tráiler oficial</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info-section">
+      <p class="section-label">Sobre el juego</p>
+      <h2 class="section-title">
+        Un mundo de <span class="accent">misterio</span><br />y poder ancestral
+      </h2>
+      <p class="section-body">
+        Aquí va la descripción de tu juego. Narra el universo, el protagonista y
+        qué hace que esta historia sea única.
+      </p>
+
+      <div class="divider"><span class="divider-symbol">◈</span></div>
+
+      <div class="desc-grid">
+        <div class="desc-card">
+          <span class="desc-icon">🗺️</span>
+          <h3>Mundo vivo</h3>
+          <p>
+            Descripción del entorno, la escala del mundo o lo que lo hace
+            especial.
+          </p>
+        </div>
+        <div class="desc-card">
+          <span class="desc-icon">⚔️</span>
+          <h3>Combate profundo</h3>
+          <p>Explica las mecánicas de juego y qué hace la experiencia única.</p>
+        </div>
+        <div class="desc-card">
+          <span class="desc-icon">📜</span>
+          <h3>Historia épica</h3>
+          <p>Una narrativa que envolverá al jugador desde el primer momento.</p>
+        </div>
+        <div class="desc-card">
+          <span class="desc-icon">🎮</span>
+          <h3>Plataformas</h3>
+          <p>
+            Indica en qué plataformas estará disponible y fechas de lanzamiento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section id="carousel-section">
+      <div class="carousel-header">
+        <h2
+          class="section-title"
+          style="font-size: clamp(1.6rem, 3.5vw, 2.5rem)"
+        >
+          El mundo en <span class="accent">imágenes</span>
+        </h2>
+      </div>
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track" id="carousel-track"></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="moveCarousel(-1)">&#8592;</button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <button class="carousel-btn" onclick="moveCarousel(1)">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta-section">
+      <p class="section-label">¿Listo para la aventura?</p>
+      <h2
+        class="section-title"
+        style="font-size: clamp(1.6rem, 3.5vw, 2.5rem); margin-bottom: 2.5rem"
+      >
+        Disponible <span class="accent">próximamente</span>
+      </h2>
+      <a href="#" class="cta-btn">Añadir a lista de deseos</a>
+      <p class="cta-sub">PC · PlayStation · Xbox · Nintendo Switch</p>
+    </section>
+
+    <footer>
+      <span>© 2026 Nilsh · Todos los derechos reservados</span>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
