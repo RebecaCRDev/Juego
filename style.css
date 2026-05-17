@@ -79,11 +79,20 @@ body::after {
   font-size: clamp(2.5rem, 9vw, 7rem);
   line-height: 1;
   letter-spacing: 4px;
-  color: var(--gold-bright);
+  color: #ffffff;
   text-shadow:
-    0 0 30px rgba(212, 168, 75, 0.8),
-    0 0 80px rgba(212, 168, 75, 0.4),
-    0 2px 4px rgba(0, 0, 0, 0.9);
+    0px 1px 0px #cccccc,
+    0px 2px 0px #c9c9c9,
+    0px 3px 0px #bbb,
+    0px 4px 0px #b9b9b9,
+    0px 5px 0px #aaa,
+    0px 6px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 5px rgba(0, 0, 0, 0.1),
+    0px 1px 3px rgba(0, 0, 0, 0.3),
+    0px 3px 5px rgba(0, 0, 0, 0.2),
+    0px 5px 10px rgba(0, 0, 0, 0.25),
+    0px 10px 10px rgba(0, 0, 0, 0.2),
+    0px 20px 20px rgba(0, 0, 0, 0.15);
   transition: font-size 0.15s ease-out;
 }
 
