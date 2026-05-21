@@ -1,4 +1,4 @@
-// ── SCROLL: encoge el título ──────────────────────────────
+// ── SCROLL ──────────────────────────────────────────────
 const titleEl = document.getElementById("title-text");
 const taglineEl = document.getElementById("tagline-text");
 const lineEl = document.getElementById("title-line");
@@ -16,35 +16,39 @@ window.addEventListener(
   { passive: true },
 );
 
-// ── VÍDEO placeholder ─────────────────────────────────────
-function handlePlay() {
-  alert(
-    'Sustituye #video-placeholder en index.html por:\n\n<iframe src="https://www.youtube.com/embed/TU_ID" style="width:100%;aspect-ratio:16/9;display:block;border:none;" allowfullscreen></iframe>',
-  );
-}
-
 // ── CARRUSEL ──────────────────────────────────────────────
 const slides = [
-  { label: "Descripcion 1", img: "assets/images/captura1.png" },
-  { label: "Descripcion 2", img: "assets/images/captura1.png" },
-  { label: "Descripcion 3", img: "assets/images/captura1.png" },
-  { label: "Descripcion 4", img: "assets/images/captura1.png" },
-  { label: "Descripcion 5", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/captura1.png" },
 ];
 
 const track = document.getElementById("carousel-track");
 const dotsEl = document.getElementById("carousel-dots");
 let current = 0;
-const SLIDE_W = 360 + 20;
+let isAnimating = false;
 
 slides.forEach((s, i) => {
   const slide = document.createElement("div");
   slide.className = "carousel-slide";
-  slide.innerHTML = `
-    <div class="slide-inner">
-      <img src="${s.img}" alt="${s.label}" style="width:100%;height:100%;object-fit:cover;display:block;">
-      <div class="slide-label">${s.label}</div>
-    </div>`;
+  slide.innerHTML = `<img src="${s.img}" alt="${s.label}" draggable="false">`;
   track.appendChild(slide);
 
   const dot = document.createElement("div");
@@ -54,15 +58,18 @@ slides.forEach((s, i) => {
 });
 
 function goTo(i) {
-  current = Math.max(0, Math.min(i, slides.length - 1));
-  track.style.transform = `translateX(-${current * SLIDE_W}px)`;
+  if (isAnimating) return;
+  isAnimating = true;
+  current = ((i % slides.length) + slides.length) % slides.length;
+  track.style.transform = `translateX(-${current * 100}%)`;
   document
     .querySelectorAll(".dot")
     .forEach((d, j) => d.classList.toggle("active", j === current));
+  setTimeout(() => (isAnimating = false), 500);
 }
 
 function moveCarousel(dir) {
   goTo(current + dir);
 }
 
-setInterval(() => goTo((current + 1) % slides.length), 4500);
+setInterval(() => goTo(current + 1), 5000);

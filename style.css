@@ -53,7 +53,6 @@ body::after {
   pointer-events: none;
 }
 
-/* HERO */
 #hero {
   position: relative;
   height: 100vh;
@@ -61,7 +60,7 @@ body::after {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 12vh;
+  padding: 4vh 1rem 1rem;
   z-index: 1;
 }
 
@@ -71,6 +70,7 @@ body::after {
   z-index: 100;
   text-align: center;
   padding: 0 1rem;
+  margin-bottom: 0;
 }
 
 #title-text {
@@ -95,6 +95,14 @@ body::after {
     0px 20px 20px rgba(0, 0, 0, 0.15);
   transition: font-size 0.15s ease-out;
 }
+
+/*#title-text {
+  width: clamp(200px, 60vw, 600px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: width 0.15s ease-out;
+}*/
 
 #tagline-text {
   font-family: "Cinzel", serif;
@@ -144,16 +152,14 @@ body::after {
   }
 }
 
-/* TRAILER */
 #trailer-section {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 2rem 5rem;
+  padding: 0 2rem 3rem;
 }
 
 #video-wrapper {
@@ -254,7 +260,6 @@ body::after {
   z-index: 2;
 }
 
-/* INFO */
 #info-section {
   position: relative;
   z-index: 1;
@@ -376,68 +381,102 @@ body::after {
 }
 
 /* CARRUSEL */
+/* CARRUSEL */
 #carousel-section {
   position: relative;
   z-index: 1;
-  padding: 3rem 0 6rem;
-  overflow: hidden;
+  padding: 3rem 0 5rem;
 }
 
 .carousel-header {
   text-align: center;
   padding: 0 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .carousel-track-wrapper {
   position: relative;
   overflow: hidden;
-  padding: 1rem 0;
-}
-.carousel-track-wrapper::before,
-.carousel-track-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100px;
-  z-index: 2;
-  pointer-events: none;
-}
-.carousel-track-wrapper::before {
-  left: 0;
-  background: linear-gradient(to right, var(--darker), transparent);
-}
-.carousel-track-wrapper::after {
-  right: 0;
-  background: linear-gradient(to left, var(--darker), transparent);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 168, 75, 0.2);
 }
 
 .carousel-track {
   display: flex;
-  gap: 20px;
-  width: max-content;
-  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  padding: 0 2rem;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  will-change: transform;
 }
 
 .carousel-slide {
-  width: 360px;
-  aspect-ratio: 16/10;
-  border-radius: 4px;
+  min-width: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
   overflow: hidden;
   flex-shrink: 0;
-  border: 1px solid rgba(212, 168, 75, 0.2);
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 1.25rem;
+}
+
+.carousel-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 2px;
+  border: 1px solid rgba(212, 168, 75, 0.3);
+  background: rgba(13, 31, 22, 0.6);
+  color: var(--gold);
+  cursor: pointer;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.carousel-btn:hover {
+  border-color: var(--gold);
+  background: rgba(212, 168, 75, 0.12);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(212, 168, 75, 0.25);
   cursor: pointer;
   transition:
-    border-color 0.25s,
-    transform 0.25s,
-    box-shadow 0.25s;
+    background 0.2s,
+    transform 0.2s;
 }
-.carousel-slide:hover {
-  border-color: rgba(212, 168, 75, 0.5);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(212, 168, 75, 0.2);
+.dot.active {
+  background: var(--gold);
+  transform: scale(1.4);
 }
 
 .slide-inner {
@@ -516,7 +555,6 @@ body::after {
   transform: scale(1.4);
 }
 
-/* CTA */
 #cta-section {
   position: relative;
   z-index: 1;
@@ -572,7 +610,6 @@ body::after {
   text-transform: uppercase;
 }
 
-/* FOOTER */
 footer {
   position: relative;
   z-index: 1;
@@ -583,4 +620,26 @@ footer {
   font-size: 0.65rem;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.discord-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: "Cinzel", serif;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--jade-glow);
+  border: 1px solid var(--jade-glow);
+  padding: 0.6rem 1.8rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition:
+    background 0.25s,
+    box-shadow 0.25s;
+  box-shadow: 0 0 15px rgba(94, 232, 154, 0.2);
+}
+.discord-btn:hover {
+  background: rgba(94, 232, 154, 0.1);
+  box-shadow: 0 0 30px rgba(94, 232, 154, 0.4);
 }

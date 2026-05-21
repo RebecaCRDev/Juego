@@ -11,48 +11,32 @@
     />
   </head>
   <body>
-    <!-- HERO -->
     <section id="hero">
       <div id="game-title">
         <h1 id="title-text">NILSH</h1>
+        /*img id="title-text" src="assets/images/titulo.png" alt="NILSH">*/
         <span class="title-line" id="title-line"></span>
         <p id="tagline-text">✦ La aventura comienza aquí ✦</p>
-      </div>
-      <div id="scroll-hint">
-        <span>Scroll</span>
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M12 5v14M5 12l7 7 7-7" />
-        </svg>
+        <a href="https://discord.gg" target="_blank" class="discord-btn">
+          Síguenos en Discord
+        </a>
       </div>
     </section>
 
-    <!-- TRAILER -->
     <section id="trailer-section">
       <div id="video-wrapper">
-        <!-- REEMPLAZA ESTO con tu iframe de YouTube:
-      <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
-        style="width:100%;aspect-ratio:16/9;display:block;border:none;"
-        allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      -->
-        <div id="video-placeholder" onclick="handlePlay()">
-          <div class="play-btn">
-            <svg viewBox="0 0 24 24" fill="var(--gold)">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </div>
-          <p class="placeholder-label">Tráiler oficial</p>
-        </div>
+        <video
+          style="width: 100%; aspect-ratio: 16/9; display: block"
+          controls
+          autoplay
+          muted
+          loop
+        >
+          <source src="assets/video/trailer.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
 
-    <!-- INFO -->
     <section id="info-section">
       <p class="section-label">Sobre el juego</p>
       <h2 class="section-title">
@@ -94,7 +78,6 @@
       </div>
     </section>
 
-    <!-- CARRUSEL -->
     <section id="carousel-section">
       <div class="carousel-header">
         <h2
@@ -114,7 +97,6 @@
       </div>
     </section>
 
-    <!-- CTA -->
     <section id="cta-section">
       <p class="section-label">¿Listo para la aventura?</p>
       <h2
