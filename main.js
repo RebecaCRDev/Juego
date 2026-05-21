@@ -4,18 +4,6 @@ const taglineEl = document.getElementById("tagline-text");
 const lineEl = document.getElementById("title-line");
 const heroEl = document.getElementById("hero");
 
-window.addEventListener(
-  "scroll",
-  () => {
-    const p = Math.min(window.scrollY / heroEl.offsetHeight, 1);
-    const size = 7 - (7 - 2) * p;
-    titleEl.style.fontSize = `clamp(2.5rem, ${size}vw, ${size}rem)`;
-    taglineEl.style.opacity = Math.max(0, 1 - p * 2.5);
-    lineEl.style.opacity = Math.max(0, 1 - p * 3);
-  },
-  { passive: true },
-);
-
 // ── CARRUSEL ──────────────────────────────────────────────
 const slides = [
   { label: "", img: "assets/images/1.png" },
