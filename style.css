@@ -637,9 +637,9 @@ footer {
   transition:
     background 0.25s,
     box-shadow 0.25s;
-  box-shadow: 0 0 15px rgba(94, 232, 154, 0.2);
+  box-shadow: 0 0 15px rgba(88, 101, 242);
 }
 .discord-btn:hover {
-  background: rgba(94, 232, 154, 0.1);
-  box-shadow: 0 0 30px rgba(94, 232, 154, 0.4);
+  background: rgba(88, 101, 242);
+  box-shadow: 0 0 30px rgba(88, 101, 242);
 }

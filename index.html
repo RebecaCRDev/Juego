@@ -13,8 +13,7 @@
   <body>
     <section id="hero">
       <div id="game-title">
-        <h1 id="title-text">NILSH</h1>
-        /*img id="title-text" src="assets/images/titulo.png" alt="NILSH">*/
+        <img id="title-text" src="assets/images/titulo2.png" alt="NILSH" />
         <span class="title-line" id="title-line"></span>
         <p id="tagline-text">✦ La aventura comienza aquí ✦</p>
         <a href="https://discord.gg" target="_blank" class="discord-btn">
@@ -32,7 +31,7 @@
           muted
           loop
         >
-          <source src="assets/video/trailer.mp4" type="video/mp4" />
+          <source src="assets/video/teaser.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
@@ -108,9 +107,3 @@
     <script src="main.js"></script>
   </body>
 </html>
-
-/*window.addEventListener( CAMBIO TITULO POR IMAGEN POR EL BLOQUE DE ARRIBA
-"scroll", () => { const p = Math.min(window.scrollY / heroEl.offsetHeight, 1);
-const size = 60 - (60 - 20) * p; titleEl.style.width = `clamp(200px, ${size}vw,
-600px)`; taglineEl.style.opacity = Math.max(0, 1 - p * 2.5);
-lineEl.style.opacity = Math.max(0, 1 - p * 3); }, { passive: true }, );*/

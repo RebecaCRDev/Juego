@@ -18,26 +18,11 @@ window.addEventListener(
 
 // ── CARRUSEL ──────────────────────────────────────────────
 const slides = [
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
-  { label: "", img: "assets/images/captura1.png" },
+  { label: "", img: "assets/images/1.png" },
+  { label: "", img: "assets/images/2.png" },
+  { label: "", img: "assets/images/3.png" },
+  { label: "", img: "assets/images/5.png" },
+  { label: "", img: "assets/images/6.png" },
 ];
 
 const track = document.getElementById("carousel-track");
