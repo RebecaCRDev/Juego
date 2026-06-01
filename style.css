@@ -86,7 +86,7 @@ body::after {
 
 #tagline-text {
   font-family: "Cinzel", serif;
-  font-size: clamp(0.65rem, 1.8vw, 0.95rem);
+  font-size: 1.5rem;
   color: var(--jade-glow);
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -606,18 +606,19 @@ footer {
   display: inline-block;
   margin-top: 1rem;
   font-family: "Cinzel", serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--jade-glow);
-  border: 1px solid var(--jade-glow);
-  padding: 0.6rem 1.8rem;
-  border-radius: 2px;
+  color: #ffffff;
+  background: #5865f2;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 4px;
   text-decoration: none;
   transition:
     background 0.25s,
     box-shadow 0.25s;
-  box-shadow: 0 0 15px rgba(88, 101, 242);
+  box-shadow: 0 0 20px rgba(88, 101, 242, 0.4);
 }
 .discord-btn:hover {
   background: rgba(88, 101, 242);
