@@ -59,50 +59,30 @@ body::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 4vh 1rem 1rem;
+  justify-content: center;
+  padding: 0 1rem;
   z-index: 1;
 }
 
 #game-title {
-  position: sticky;
-  top: 16px;
+  position: relative;
   z-index: 100;
   text-align: center;
   padding: 0 1rem;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
 }
 
 #title-text {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-size: clamp(2.5rem, 9vw, 7rem);
-  line-height: 1;
-  letter-spacing: 4px;
-  color: #ffffff;
-  text-shadow:
-    0px 1px 0px #cccccc,
-    0px 2px 0px #c9c9c9,
-    0px 3px 0px #bbb,
-    0px 4px 0px #b9b9b9,
-    0px 5px 0px #aaa,
-    0px 6px 1px rgba(0, 0, 0, 0.1),
-    0px 0px 5px rgba(0, 0, 0, 0.1),
-    0px 1px 3px rgba(0, 0, 0, 0.3),
-    0px 3px 5px rgba(0, 0, 0, 0.2),
-    0px 5px 10px rgba(0, 0, 0, 0.25),
-    0px 10px 10px rgba(0, 0, 0, 0.2),
-    0px 20px 20px rgba(0, 0, 0, 0.15);
-  transition: font-size 0.15s ease-out;
-}
-
-/*#title-text {
-  width: clamp(200px, 60vw, 600px);
+  width: clamp(500px, 90vw, 1100px);
   height: auto;
   display: block;
   margin: 0 auto;
   transition: width 0.15s ease-out;
-}*/
+}
 
 #tagline-text {
   font-family: "Cinzel", serif;
