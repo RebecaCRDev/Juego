@@ -83,7 +83,7 @@ body::after {
 }
 
 #title-text {
-  width: clamp(500px, 110vw, 1500px);
+  width: min(85vw, 1500px);
   height: auto;
   display: block;
   margin: 0 auto;
