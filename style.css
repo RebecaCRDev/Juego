@@ -254,11 +254,12 @@ body::after {
 }
 
 .section-label {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--jade-glow);
   margin-bottom: 1rem;
+  margin-top: 2rem;
   text-shadow: 0 0 15px rgba(94, 232, 154, 0.4);
 }
 
@@ -306,7 +307,7 @@ body::after {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 .divider::before,
 .divider::after {
@@ -608,4 +609,43 @@ footer {
 .discord-btn:hover {
   background: #4752c4;
   box-shadow: 0 0 35px rgba(88, 101, 242, 0.6);
+}
+
+.social-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.steam-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #1b2838;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition:
+    background 0.25s,
+    box-shadow 0.25s;
+  box-shadow: 0 0 20px rgba(27, 40, 56, 0.4);
+}
+.steam-btn:hover {
+  background: #2a475e;
+  box-shadow: 0 0 35px rgba(27, 40, 56, 0.6);
+}
+
+.discord-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0;
 }

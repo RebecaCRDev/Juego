@@ -16,10 +16,28 @@
         <img id="title-text" src="assets/images/titulo2.png" alt="NILSH" />
         <span class="title-line" id="title-line"></span>
         <p id="tagline-text">✦ La aventura comienza aquí ✦</p>
-        <a href="https://discord.gg" target="_blank" class="discord-btn">
-          Síguenos en Discord
-        </a>
-
+        <div class="social-btns">
+          <a href="https://discord.gg" target="_blank" class="discord-btn">
+            <img
+              src="assets/images/discord-logo.png"
+              alt="Discord"
+              style="width: 24px; height: 24px; object-fit: contain"
+            />
+            Síguenos en Discord
+          </a>
+          <a
+            href="https://store.steampowered.com"
+            target="_blank"
+            class="steam-btn"
+          >
+            <img
+              src="assets/images/steam-logo.png"
+              alt="Steam"
+              style="width: 24px; height: 24px; object-fit: contain"
+            />
+            Whislist en Steam
+          </a>
+        </div>
         <div id="scroll-hint">
           <span>Scroll</span>
           <svg
@@ -49,11 +67,23 @@
     </section>
 
     <section id="info-section">
-      <h2 class="section-title">
+      <h2
+        class="section-title"
+        style="
+          text-align: center;
+          margin: 0 auto;
+          font-size: clamp(1.2rem, 2.5vw, 2rem);
+        "
+      >
         AYUDA A LOS NILSH <span class="accent">A RESTAURAR LA ARMONÍA</span> DE
         UN MUNDO OLVIDADO
       </h2>
-      <p class="section-body">PUNTOS CLAVE</p>
+      <p
+        class="section-label"
+        style="margin-top: 5rem; font-size: 1.3rem; color: var(--gold-bright)"
+      >
+        PUNTOS CLAVE
+      </p>
 
       <div class="divider"><span class="divider-symbol">◈</span></div>
 
@@ -123,12 +153,12 @@
         Disponible <span class="accent">próximamente</span>
       </h2>
       <!-- <a href="#" class="cta-btn">Añadir a lista de deseos</a>
-      <p class="cta-sub">PC · PlayStation · Xbox · Nintendo Switch</p>
+      <p class="cta-sub">PC · PlayStation · Xbox · Nintendo Switch</p> -->
     </section>
 
     <footer>
       <span>© 2026 Nilsh · Todos los derechos reservados</span>
-    </footer> -->
+    </footer>
 
     <script src="main.js"></script>
   </body>
