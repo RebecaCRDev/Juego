@@ -254,9 +254,21 @@ body::after {
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
-@media (max-width: 600px) {
-  .desc-grid {
-    grid-template-columns: 1fr;
+
+@media (max-width: 768px) {
+  #title-text {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: unset;
+  }
+
+  #game-title {
+    width: 100%;
+    padding: 0;
+  }
+
+  #hero {
+    overflow: hidden;
   }
 }
 
@@ -559,4 +571,59 @@ footer {
 .steam-btn:hover {
   background: #2a475e;
   box-shadow: 0 0 35px rgba(27, 40, 56, 0.6);
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #title-text {
+    width: clamp(280px, 90vw, 500px);
+  }
+
+  #tagline-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    padding: 0 1rem;
+  }
+
+  .discord-btn,
+  .steam-btn {
+    font-size: 0.75rem;
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .social-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #video-wrapper {
+    max-width: 100%;
+  }
+
+  #info-section {
+    padding: 3rem 1rem;
+  }
+
+  .desc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-track-wrapper {
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+  }
+
+  #cta-section {
+    padding: 3rem 1rem 5rem;
+  }
+
+  .cta-btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 2rem;
+    letter-spacing: 2px;
+  }
 }
