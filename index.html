@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nilsh</title>
-    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="stylesheet" href="style.css?v=3" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <button id="lang-toggle" class="lang-btn">EN</button>
+
     <section id="hero">
       <div id="game-title">
         <img
@@ -19,7 +21,13 @@
           alt="NILSH"
         />
         <span class="title-line" id="title-line"></span>
-        <p id="tagline-text">✦ La aventura comienza aquí ✦</p>
+        <p
+          id="tagline-text"
+          data-es="✦ La aventura comienza aquí ✦"
+          data-en="✦ The adventure starts here ✦"
+        >
+          ✦ La aventura comienza aquí ✦
+        </p>
         <div class="social-btns">
           <a href="https://discord.gg" target="_blank" class="discord-btn">
             <img
@@ -27,8 +35,11 @@
               alt="Discord"
               style="width: 24px; height: 24px; object-fit: contain"
             />
-            Síguenos en Discord
+            <span data-es="Síguenos en Discord" data-en="Join us on Discord"
+              >Síguenos en Discord</span
+            >
           </a>
+
           <a
             href="https://store.steampowered.com"
             target="_blank"
@@ -39,11 +50,13 @@
               alt="Steam"
               style="width: 24px; height: 24px; object-fit: contain"
             />
-            Whislist en Steam
+            <span data-es="Whislist en Steam" data-en="Wishlist on Steam"
+              >Whislist en Steam</span
+            >
           </a>
         </div>
         <div id="scroll-hint">
-          <span>Scroll</span>
+          <span data-es="Scroll" data-en="Scroll">Scroll</span>
           <svg
             width="18"
             height="18"
@@ -79,12 +92,24 @@
           font-size: clamp(1.2rem, 2.5vw, 2rem);
         "
       >
-        AYUDA A LOS NILSH <span class="accent">A RESTAURAR LA ARMONÍA</span> DE
-        UN MUNDO OLVIDADO
+        <span data-es="AYUDA A LOS NILSH" data-en="HELP THE NILSH"
+          >AYUDA A LOS NILSH</span
+        >
+        <span
+          class="accent"
+          data-es="A RESTAURAR LA ARMONÍA"
+          data-en="RESTORE HARMONY"
+          >A RESTAURAR LA ARMONÍA</span
+        >
+        <span data-es="DE UN MUNDO OLVIDADO" data-en="TO A FORGOTTEN WORLD"
+          >DE UN MUNDO OLVIDADO</span
+        >
       </h2>
       <p
         class="section-label"
         style="margin-top: 5rem; font-size: 1.3rem; color: var(--gold-bright)"
+        data-es="PUNTOS CLAVE"
+        data-en="CORE FEATURES"
       >
         PUNTOS CLAVE
       </p>
@@ -94,24 +119,33 @@
       <div class="desc-grid">
         <div class="desc-card">
           <span class="desc-icon">🗺️</span>
-          <h3>MUNDO VIVO</h3>
-          <p>
+          <h3 data-es="MUNDO VIVO" data-en="A LIVING WORLD">MUNDO VIVO</h3>
+          <p
+            data-es="Desvíate del camino, sigue tu intuición y descubre los secretos de un mundo que guarda mucho más de lo que aparenta"
+            data-en="Leave the path behind, follow your intuition, and discover the secrets of a world that holds more than meets the eye"
+          >
             Desvíate del camino, sigue tu intuición y descubre los secretos de
             un mundo que guarda mucho más de lo que aparenta
           </p>
         </div>
         <div class="desc-card">
           <span class="desc-icon">⚔️</span>
-          <h3>COMBATE</h3>
-          <p>
+          <h3 data-es="COMBATE" data-en="COMBAT">COMBATE</h3>
+          <p
+            data-es="Domina tus herramientas, estudia a tus enemigos y encuentra la mejor forma de afrontar cada encuentro"
+            data-en="Master your tools, study your enemies, and find the best way to overcome each encounter"
+          >
             Domina tus herramientas, estudia a tus enemigos y encuentra la mejor
             forma de afrontar cada encuentro
           </p>
         </div>
         <div class="desc-card">
           <span class="desc-icon">📜</span>
-          <h3>HISTORIA</h3>
-          <p>
+          <h3 data-es="HISTORIA" data-en="STORY">HISTORIA</h3>
+          <p
+            data-es="Un antiguo misterio ha sumido el mundo del caos. Descubre el pasado olvidado de los Nilsh, reúne a sus pueblos dispersos y lucha por restaurar la armonía perdida"
+            data-en="An ancient mystery has plunged the world into chaos. Discover the forgotten past of the Nilsh, reunite their scattered peoples and fight to restore lost harmony"
+          >
             Un antiguo misterio ha sumido el mundo del caos. Descubre el pasado
             olvidado de los Nilsh, reúne a sus pueblos dispersos y lucha por
             restaurar la armonía perdida
@@ -119,8 +153,13 @@
         </div>
         <div class="desc-card">
           <span class="desc-icon">✨</span>
-          <h3>ESENCIA CLÁSICA</h3>
-          <p>
+          <h3 data-es="ESENCIA CLÁSICA" data-en="CLASSIC ESSENCE">
+            ESENCIA CLÁSICA
+          </h3>
+          <p
+            data-es="NILSH abraza las raíces de las grandes aventuras de exploración y acción, refinando sus mecánicas para ofrecer una experiencia moderna, profunda y con personalidad propia"
+            data-en="NILSH embraces the roots of great exploration and action-adventure games, refining its mechanics to deliver a modern, deep experience with its own identity"
+          >
             NILSH abraza las raíces de las grandes aventuras de exploración y
             acción, refinando sus mecánicas para ofrecer una experiencia
             moderna, profunda y con personalidad propia
@@ -135,7 +174,10 @@
           class="section-title"
           style="font-size: clamp(1.6rem, 3.5vw, 2.5rem)"
         >
-          El mundo en <span class="accent">imágenes</span>
+          <span data-es="El mundo en" data-en="World in">El mundo en</span>
+          <span class="accent" data-es="imágenes" data-en="pictures"
+            >imágenes</span
+          >
         </h2>
       </div>
       <div class="carousel-track-wrapper">
@@ -149,19 +191,32 @@
     </section>
 
     <section id="cta-section">
-      <p class="section-label">¿Listo para la aventura?</p>
+      <p
+        class="section-label"
+        data-es="¿Listo para la aventura?"
+        data-en="Ready for adventure?"
+      >
+        ¿Listo para la aventura?
+      </p>
       <h2
         class="section-title"
         style="font-size: clamp(1.6rem, 3.5vw, 2.5rem); margin-bottom: 2.5rem"
       >
-        Disponible <span class="accent">próximamente</span>
+        <span data-es="Disponible" data-en="Coming">Disponible</span>
+        <span class="accent" data-es="próximamente" data-en="soon"
+          >próximamente</span
+        >
       </h2>
       <!-- <a href="#" class="cta-btn">Añadir a lista de deseos</a>
       <p class="cta-sub">PC · PlayStation · Xbox · Nintendo Switch</p> -->
     </section>
 
     <footer>
-      <span>© 2026 Nilsh · Todos los derechos reservados</span>
+      <span
+        data-es="© 2026 Nilsh · Todos los derechos reservados"
+        data-en="© 2026 Nilsh · All rights reserved"
+        >© 2026 Nilsh · Todos los derechos reservados</span
+      >
     </footer>
 
     <script src="main.js"></script>

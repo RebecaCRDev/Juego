@@ -1,0 +1,112 @@
+{
+  "textos": [
+    {
+      "id": 1,
+      "ubicacion": "hero - tagline",
+      "texto_es": "✦ La aventura comienza aquí ✦",
+      "texto_en": ""
+    },
+    {
+      "id": 2,
+      "ubicacion": "hero - discord btn",
+      "texto_es": "Síguenos en Discord",
+      "texto_en": ""
+    },
+    {
+      "id": 3,
+      "ubicacion": "hero - steam btn",
+      "texto_es": "Whislist en Steam",
+      "texto_en": ""
+    },
+    {
+      "id": 4,
+      "ubicacion": "hero - scroll hint",
+      "texto_es": "Scroll",
+      "texto_en": ""
+    },
+    {
+      "id": 5,
+      "ubicacion": "info - titulo principal",
+      "texto_es": "AYUDA A LOS NILSH A RESTAURAR LA ARMONÍA DE UN MUNDO OLVIDADO",
+      "texto_en": ""
+    },
+    {
+      "id": 6,
+      "ubicacion": "info - subtitulo",
+      "texto_es": "PUNTOS CLAVE",
+      "texto_en": ""
+    },
+    {
+      "id": 7,
+      "ubicacion": "card 1 - titulo",
+      "texto_es": "MUNDO VIVO",
+      "texto_en": ""
+    },
+    {
+      "id": 8,
+      "ubicacion": "card 1 - texto",
+      "texto_es": "Desvíate del camino, sigue tu intuición y descubre los secretos de un mundo que guarda mucho más de lo que aparenta",
+      "texto_en": ""
+    },
+    {
+      "id": 9,
+      "ubicacion": "card 2 - titulo",
+      "texto_es": "COMBATE",
+      "texto_en": ""
+    },
+    {
+      "id": 10,
+      "ubicacion": "card 2 - texto",
+      "texto_es": "Domina tus herramientas, estudia a tus enemigos y encuentra la mejor forma de afrontar cada encuentro",
+      "texto_en": ""
+    },
+    {
+      "id": 11,
+      "ubicacion": "card 3 - titulo",
+      "texto_es": "HISTORIA",
+      "texto_en": ""
+    },
+    {
+      "id": 12,
+      "ubicacion": "card 3 - texto",
+      "texto_es": "Un antiguo misterio ha sumido el mundo del caos. Descubre el pasado olvidado de los Nilsh, reúne a sus pueblos dispersos y lucha por restaurar la armonía perdida",
+      "texto_en": ""
+    },
+    {
+      "id": 13,
+      "ubicacion": "card 4 - titulo",
+      "texto_es": "ESENCIA CLÁSICA",
+      "texto_en": ""
+    },
+    {
+      "id": 14,
+      "ubicacion": "card 4 - texto",
+      "texto_es": "NILSH abraza las raíces de las grandes aventuras de exploración y acción, refinando sus mecánicas para ofrecer una experiencia moderna, profunda y con personalidad propia",
+      "texto_en": ""
+    },
+    {
+      "id": 15,
+      "ubicacion": "carrusel - titulo",
+      "texto_es": "El mundo en imágenes",
+      "texto_en": ""
+    },
+    {
+      "id": 16,
+      "ubicacion": "cta - subtitulo",
+      "texto_es": "¿Listo para la aventura?",
+      "texto_en": ""
+    },
+    {
+      "id": 17,
+      "ubicacion": "cta - titulo",
+      "texto_es": "Disponible próximamente",
+      "texto_en": ""
+    },
+    {
+      "id": 18,
+      "ubicacion": "footer",
+      "texto_es": "© 2026 Nilsh · Todos los derechos reservados",
+      "texto_en": ""
+    }
+  ]
+}

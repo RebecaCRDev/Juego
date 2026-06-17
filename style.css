@@ -7,6 +7,41 @@
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Rascon";
+  src: url("assets/fonts/Rascon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro Soft";
+  src: url("assets/fonts/Sofia Pro Soft Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro Soft";
+  src: url("assets/fonts/Sofia_Pro_Soft_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro Soft";
+  src: url("assets/fonts/Sofia_Pro_Soft_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro Soft";
+  src: url("assets/fonts/Sofia_Pro_Soft_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 :root {
   --jade-glow: #5ee89a;
   --gold: #d4a84b;
@@ -23,7 +58,7 @@ html {
 }
 
 body {
-  font-family: "Cinzel", serif;
+  font-family: "Sofia Pro Soft", serif;
   background: var(--darker);
   color: var(--text);
   overflow-x: hidden;
@@ -91,7 +126,7 @@ body::after {
 }
 
 #tagline-text {
-  font-family: "Cinzel", serif;
+  font-family: "Sofia Pro Soft", serif;
   font-size: 1.5rem;
   color: var(--jade-glow);
   letter-spacing: 6px;
@@ -194,7 +229,7 @@ body::after {
 }
 
 .section-title {
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Rascon", serif;
   font-weight: 700;
   font-size: clamp(1.5rem, 3.5vw, 2.8rem);
   line-height: 1.3;
@@ -291,7 +326,7 @@ body::after {
   background: rgba(13, 31, 22, 0.85);
 }
 .desc-card h3 {
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Rascon", serif;
   font-size: 1.1rem;
   color: var(--gold-bright);
   margin-bottom: 0.75rem;
@@ -429,11 +464,11 @@ body::after {
   color: var(--gold);
   padding: 5px 12px;
   border-radius: 2px;
-  font-family: "Cinzel", serif;
+  font-family: "Sofia Pro Soft", serif;
 }
 
 .slide-glyph {
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Rascon", serif;
   font-size: 2.5rem;
   color: rgba(212, 168, 75, 0.4);
   text-shadow: 0 0 20px rgba(212, 168, 75, 0.3);
@@ -463,7 +498,7 @@ body::after {
 
 .cta-btn {
   display: inline-block;
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Rascon", serif;
   font-size: 1rem;
   font-weight: 700;
   padding: 1rem 3rem;
@@ -518,7 +553,7 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: "Cinzel", serif;
+  font-family: "Sofia Pro Soft", serif;
   font-size: 1rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -542,7 +577,7 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: "Cinzel", serif;
+  font-family: "Sofia Pro Soft", serif;
   font-size: 1rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -634,4 +669,28 @@ footer {
     padding: 0.8rem 2rem;
     letter-spacing: 2px;
   }
+}
+
+.lang-btn {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  background: rgba(13, 31, 22, 0.7);
+  border: 1px solid var(--gold);
+  color: var(--gold-bright);
+  font-family: "Sofia Pro Soft", serif;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    background 0.25s,
+    box-shadow 0.25s;
+  box-shadow: 0 0 15px rgba(212, 168, 75, 0.2);
+}
+.lang-btn:hover {
+  background: rgba(212, 168, 75, 0.15);
+  box-shadow: 0 0 25px rgba(212, 168, 75, 0.4);
 }

@@ -46,3 +46,16 @@ function moveCarousel(dir) {
 }
 
 setInterval(() => goTo(current + 1), 5000);
+
+// ── CAMBIO DE IDIOMA ───────────────────────────────────────
+const langBtn = document.getElementById("lang-toggle");
+let currentLang = "es";
+
+langBtn.addEventListener("click", () => {
+  currentLang = currentLang === "es" ? "en" : "es";
+  langBtn.textContent = currentLang === "es" ? "EN" : "ES";
+
+  document.querySelectorAll("[data-es]").forEach((el) => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+});
